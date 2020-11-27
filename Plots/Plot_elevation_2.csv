@@ -1,0 +1,200 @@
+meadow,site,plot,WGS84.N,WGS84.E,CH1903+,CH1903++,elevation,Notes
+Nesselboden,N4,N4.1,46.86952,9.48889,2'756'296,1'192'974,1'414,
+Nesselboden,N4,N4.2,46.869693,9.489025,2'756'307,1'192'994,1'417,
+Nesselboden,N4,N4.3,46.869744,9.489174,2'756'317,1'192'999,1'417,
+Nesselboden,N4,N4.4,46.869443,9.488944,2'756'301,1'192'965,1'413,
+Nesselboden,N4,N4.5,46.869527,9.489207,2'756'321,1'192'975,1'411,
+Nesselboden,N4,N4.6,46.86957,9.489358,2'756'332,1'192'980,1'410,was moved 2m towards NB4.7 because of a road
+Nesselboden,N4,N4.7,46.869317,9.489167,2'756'318,1'192'952,1'409,was moved 2m towards NB4.5 because of a road
+Nesselboden,N4,N4.8,46.869399,9.48936,2'756'333,1'192'961,1'406,
+Nesselboden,N4,N4.9,46.869515,9.489597,2'756'350,1'192'975,1'404,was moved 2m towards NB4.6 because of a bush
+Nesselboden,N5,N5.1,46.869745,9.490013,2'756'381,1'193'001,1'409,
+Nesselboden,N5,N5.2,46.869936,9.4903,2'756'403,1'193'023,1'409,
+Nesselboden,N5,N5.3,46.870023,9.490402,2'756'410,1'193'033,1'410,was moved 3m away from NB5.6 because of a road
+Nesselboden,N5,N5.4,46.869386,9.490274,2'756'402,1'192'962,1'396,was moved 3m closer to NB5.7 because of a rock
+Nesselboden,N5,N5.5,46.869728,9.490414,2'756'412,1'193'000,1'404,
+Nesselboden,N5,N5.6,46.869761,9.49045,2'756'415,1'193'004,1'404,
+Nesselboden,N5,N5.7,46.869533,9.490401,2'756'412,1'192'978,1'400,
+Nesselboden,N5,N5.8,46.869639,9.490695,2'756'434,1'192'991,1'399,
+Nesselboden,N5,N5.9,46.869725,9.490877,2'756'447,1'193'001,1'400,
+Im Bofel,I3,I3.1,46.867152,9.509702,2'757'890,1'192'752,714,
+Im Bofel,I3,I3.2,46.867172,9.509853,2'757'901,1'192'755,713,
+Im Bofel,I3,I3.3,46.867329,9.510182,2'757'926,1'192'773,709,
+Im Bofel,I3,I3.4,46.867448,9.51038,2'757'940,1'192'787,707,
+Im Bofel,I3,I3.5,46.867535,9.510586,2'757'956,1'192'797,704,
+Im Bofel,I3,I3.6,46.867033,9.509883,2'757'904,1'192'739,714,
+Im Bofel,I3,I3.7,46.867063,9.51011,2'757'921,1'192'743,712,
+Im Bofel,I3,I3.8,46.867192,9.510305,2'757'935,1'192'758,710,
+Im Bofel,I3,I3.9,46.867351,9.510814,2'757'974,1'192'777,703,
+Im Bofel,I3,I3.10,46.867348,9.510737,2'757'968,1'192'776,704,
+Im Bofel,I4,I4.1,46.868597,9.511815,2'758'046,1'192'917,704,moved 1m towards plot 4 to avoid roadside
+Im Bofel,I4,I4.2,46.868675,9.512088,2'758'067,1'192'926,702,
+Im Bofel,I4,I4.3,46.868713,9.512387,2'758'090,1'192'931,701,
+Im Bofel,I4,I4.4,46.868382,9.511997,2'758'061,1'192'894,701,moved 1m towards plot 7 to avoid cow path
+Im Bofel,I4,I4.5,46.86853,9.512216,2'758'077,1'192'911,702,
+Im Bofel,I4,I4.6,46.868573,9.512452,2'758'095,1'192'916,702,
+Im Bofel,I4,I4.7,46.868289,9.512192,2'758'076,1'192'884,697,
+Im Bofel,I4,I4.8,46.568378,9.512408,2'758'092,1'192'894,698,
+Im Bofel,I4,I4.9,46.868437,9.512609,2'758'107,1'192'901,699,
+Nesselboden,N1,N1.1,46.867883,9.486444,2'756'115,1'192'787,1'396,
+Nesselboden,N1,N1.2,46.867972,9.486604,2'756'127,1'192'797,1'397,moved 1.5m towards plot1 to avoid large rock
+Nesselboden,N1,N1.3,46.868017,9.486835,2'756'152,1'192'803,1'395,moved 3m towards plot 2 to avoid large tree stump
+Nesselboden,N1,N1.4,46.867612,9.4867,2'756'135,1'192'757,1'393,
+Nesselboden,N1,N1.5,46.867722,9.486885,2'756'149,1'192'770,1'392,
+Nesselboden,N1,N1.6,46.867877,9.487128,2'756'167,1'192'788,1'391,
+Nesselboden,N1,N1.7,46.867544,9.486939,2'756'154,1'192'750,1'387,
+Nesselboden,N1,N1.8,46.867693,9.487112,2'756'166,1'192'767,1'388,
+Nesselboden,N1,N1.9,46.867757,9.487308,2'756'181,1'192'775,1'390,
+Nesselboden,N2,N2.1,46.868887,9.487524,2'756'194,1'192'901,1'409,moved 1m towards plot4 to avoid big pile of sticks
+Nesselboden,N2,N2.2,46.86895,9.487974,2'756'228,1'192'909,1'409,
+Nesselboden,N2,N2.3,46.869126,9.488196,2'756'245,1'192'929,1'410,
+Nesselboden,N2,N2.4,46.868735,9.487843,2'756'219,1'192'884,1'405,
+Nesselboden,N2,N2.5,46.868828,9.487978,2'756'229,1'192'985,1'440,moved 2m towards plot 2 to avoid pathway
+Nesselboden,N2,N2.6,46.868886,9.488331,2'756'256,1'192'902,1'408,
+Nesselboden,N2,N2.7,46.86859,9.488083,2'756'238,1'192'869,1'405,
+Nesselboden,N2,N2.8,46.868762,9.488255,2'756'250,1'192'888,1'406,
+Nesselboden,N2,N2.9,46.868777,9.488464,2'756'266,1'192'890,1'407,
+Nesselboden,N3,N3.1,46.869088,9.488484,2'756'267,1'192'925,1'410,The plot locations for this site seem fairly inaccurate
+Nesselboden,N3,N3.2,46.869234,9.488634,2'756'278,1'192'941,1'412,
+Nesselboden,N3,N3.3,46.869392,9.488906,2'756'298,1'192'960,1'413,
+Nesselboden,N3,N3.4,46.868946,9.488747,2'756'287,1'192'910,1'408,
+Nesselboden,N3,N3.5,46.869148,9.488855,2'756'295,1'192'932,1'413,
+Nesselboden,N3,N3.6,46.869173,9.488989,2'756'305,1'192'935,1'411,moved 2m towards plot9 to avoid path
+Nesselboden,N3,N3.7,46.868773,9.488798,2'756'292,1'192'891,1'408,
+Nesselboden,N3,N3.8,46.869001,9.489037,2'756'309,1'192'916,1'410,
+Nesselboden,N3,N3.9,46.869197,9.489185,2'756'320,1'192'938,1'409,
+Oberberg,O3,O3.1,46.87744,9.494128,2'756'673,1'193'864,1'611,
+Oberberg,O3,O3.2,46.877536,9.49435,2'756'689,1'193'876,1'610,moved 2m towards plot 5 in order to avoid a tree stump
+Oberberg,O3,O3.3,46.87765,9.49446,2'756'698,1'193'889,1'610,forgot to record gps coordinates when plot was established; location and elevation estimated using map
+Oberberg,O3,O3.4,46.877318,9.494196,2'756'678,1'193'851,1'603,
+Oberberg,O3,O3.5,46.877402,9.494415,2'756'695,1'193'861,1'603,highly inaccurate
+Oberberg,O3,O3.6,46.877362,9.494622,2'756'710,1'193'875,1'601,highly inaccurate
+Oberberg,O3,O3.7,46.877188,9.494453,2'756'698,1'193'837,1'590,
+Oberberg,O3,O3.8,46.877358,9.494615,2'756'710,1'193'856,1'594,
+Oberberg,O3,O3.9,46.877474,9.494779,2'756'722,1'193'869,1'595,
+Oberberg,O4,O4.1,46.876932,9.494471,2'756'700,1'193'809,1'578,
+Oberberg,O4,O4.2,46.877138,9.494855,2'756'729,1'193'832,1'578,
+Oberberg,O4,O4.3,46.877205,9.495077,2'756'746,1'193'840,1'575,
+Oberberg,O4,O4.4,46.876837,9.494582,2'756'709,1'193'798,1'571,
+Oberberg,O4,O4.5,46.876956,9.494905,2'756'733,1'193'812,1'568,
+Oberberg,O4,O4.6,46.87703,9.495353,2'756'767,1'193'821,1'561,
+Oberberg,O4,O4.7,46.876712,9.494649,2'756'714,1'193'785,1'563,
+Oberberg,O4,O4.8,46.876872,9.495154,2'756'752,1'193'793,1'558,
+Oberberg,O4,O4.9,46.876835,9.495289,2'756'763,1'193'799,1'557,
+Arella,A1,A1.1,46.87361,9.50813,2'757'751,1'193'467,1'001,Coordinates in Fletcher's phone
+Arella,A1,A1.2,46.87369,9.50838,2'757'770,1'193'477,998,Coordinates in Fletcher's phone
+Arella,A1,A1.3,46.8738,9.50856,2'757'784,1'193'489,998,Coordinates in Fletcher's phone
+Arella,A1,A1.4,46.87349,9.50828,2'757'763,1'193'454,997,Coordinates in Fletcher's phone
+Arella,A1,A1.5,46.87355,9.50849,2'757'779,1'193'461,995,Coordinates in Fletcher's phone
+Arella,A1,A1.6,46.87364,9.5087,2'757'795,1'193'472,994,Coordinates in Fletcher's phone
+Arella,A1,A1.7,46.87329,9.50846,2'757'777,1'193'432,992,Coordinates in Fletcher's phone
+Arella,A1,A1.8,46.87342,9.50863,2'757'790,1'193'447,993,Coordinates in Fletcher's phone
+Arella,A1,A1.9,46.87354,9.50882,2'757'804,1'193'460,991,Coordinates in Fletcher's phone
+Arella,A2,A2.1,46.871644,9.50537,2'757'547,1'193'243,995,
+Arella,A2,A2.2,46.871745,9.505641,2'757'567,1'193'255,995,
+Arella,A2,A2.3,46.781721,9.505845,2'757'582,1'193'263,994,
+Arella,A2,A2.4,46.871488,9.50545,2'757'553,1'193'226,990,Moved 1m towards A2.1 to avoid large bush
+Arella,A2,A2.5,46.871545,9.505812,2'757'580,1'193'233,986,
+Arella,A2,A2.6,46.871706,9.505991,2'757'593,1'193'251,989,
+Arella,A2,A2.7,46.871396,9.505579,2'757'563,1'193'216,986,moved 1m away from A2.4 to avoid cow path
+Arella,A2,A2.8,46.871397,9.505851,2'757'584,1'193'216,981,moved 1m towards A2.5 to avoid cow path
+Arella,A2,A2.9,46.871605,9.506108,2'757'603,1'193'240,983,moved 5m towards A2.6 to avoid cow path
+Arella,A3,A3.1,46.870994,9.506495,2'757'634,1'193'173,959,
+Arella,A3,A3.2,46.871081,9.506685,2'757'648,1'193'183,958,moved 1m towards plot A3.1 to avoid rose bush
+Arella,A3,A3.3,46.871126,9.506912,2'757'665,1'193'188,957,
+Arella,A3,A3.4,46.87839,9.506606,2'757'643,1'193'156,954,
+Arella,A3,A3.5,46.870947,9.506849,2'757'661,1'193'168,953,
+Arella,A3,A3.6,46.871059,9.507102,2'757'680,1'193'181,952,
+Arella,A3,A3.7,46.870773,9.506794,2'757'657,1'193'149,951,moved 1m towards plot A3.4 to avoid rose bush
+Arella,A3,A3.8,46.870778,9.506941,2'757'669,1'193'150,950,
+Arella,A3,A3.9,46.870937,9.507159,2'757'685,1'193'168,948,moved 1m away from plot A3.8 to avoid rose bush
+Im Bofel,I5,I5.1,46.869978,9.513651,2'758'183.00,1'193'075.20,695,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.2,46.870118,9.51375,2'758'190.10,1'193'091.20,695,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.3,46.870258,9.513944,2'758'204.50,1'193'106.80,693,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.4,46.869885,9.513738,2'758'189.90,1'193'065.00,689,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.5,46.870066,9.513907,2'758'202.50,1'193'085.80,688,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.6,46.870127,9.514099,2'758'216.80,1'193'092.90,686,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.7,46.869828,9.513938,2'758'205.40,1'193'059.40,685,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.8,46.869906,9.51401,2'758'210.50,1'193'068.00,685,Coordinates in Mikko J's phone
+Im Bofel,I5,I5.9,46.870074,9.514247,2'758'228.30,1'193'087.30,683,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.1,46.873929,9.517565,2'758'469.50,1'193'522.00,694,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.2,46.874168,9.517565,2'758'469.00,1'193'548.80,703,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.3,46.874254,9.517787,2'758'485.70,1'193'558.70,697,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.4,46.87389,9.51769,2'758'479,1'193'518,687,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.5,46.874068,9.517724,2'758'481.40,1'193'537.90,692,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.6,46.87424,9.517945,"	2'758'497.6",1'193'557.70,689,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.7,46.873818,9.517868,2'758'493.00,1'193'510.60,680,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.8,46.873957,9.518074,"	2'758'508.3",1'193'526.30,676,Coordinates in Mikko J's phone
+Im Bofel,I6,I6.9,46.874086,9.518148,2'758'513.60,1'193'540.80,676,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.1,46.87448,9.518741,2'758'557.70,1'193'586.00,665,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.2,46.874624,9.518915,2'758'570.50,1'193'602.00,661,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.3,46.874763,9.51898,2'758'575.00,1'193'617.50,663,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.4,46.874424,9.518915,2'758'571.00,1'193'579.90,654,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.5,46.874575,9.51908,2'758'583.30,1'193'597.50,653,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.6,46.874697,9.519125,2'758'586.20,1'193'610.70,656,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.7,46.874276,9.519018,2'758'579.40,1'193'563.50,648,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.8,46.87442,9.519166,2'758'590.20,1'193'580.00,647,Coordinates in Mikko J's phone
+Im Bofel,I7,I7.9,46.874575,9.519253,2'758'596.30,1'193'597.20,648,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.1,46.871274,9.511993,2'758'052.70,1'193'215.80,788,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.2,46.871454,9.512168,2'758'065.70,1'193'236.20,790,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.3,46.871479,9.512379,2'758'081.60,1'193'239.40,785,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.4,46.871173,9.512105,2'758'061.60,1'193'204.80,785,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.5,46.87129,9.512315,2'758'077.30,1'193'218.10,778,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.6,46.871379,9.512506,2'758'091.60,1'193'228.50,776,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.7,46.871053,9.51231,2'758'077.60,1'193'191.70,772,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.8,46.871163,9.512497,2'758'091.50,1'193'204.40,771,Coordinates in Mikko J's phone
+Im Bofel,I1,I1.9,46.871222,9.512704,"2'758'107.1, 1'193'211.5",,764,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.1,46.871449,9.513516,"2'758'168.3, 1'193'238.1",,740,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.2,46.871616,9.513635,"2'758'177.0, 1'193'257.1",,742,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.3,46.871715,9.51385,"2'758'193.0, 1'193'268.6",,738,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.4,46.871413,9.513669,"2'758'180.1, 1'193'234.6",,734,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.5,46.871529,9.513865,"2'758'194.7, 1'193'247.9",,731,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.6,46.871633,9.514085,"2'758'211.1, 1'193'259.8",,726,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.7,46.871321,9.513961,"2'758'202.7, 1'193'225.0",,728,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.8,46.871476,9.514035,"2'758'207.9, 1'193'242.4",,726,Coordinates in Mikko J's phone
+Im Bofel,I2,I2.9,46.871622,9.514288,"2'758'226.6, 1'193'258.9",,720,Coordinates in Mikko J's phone
+Arella,A4,A4.1,46.869224,9.501591,"2'757'266.1, 1'192'967.1",,1'015,Coordinates in Mikko J's phone
+Arella,A4,A4.2,46.869296,9.501877,"2'757'287.5, 1'192'975.7",,1'011,Coordinates in Mikko J's phone
+Arella,A4,A4.3,46.869412,9.502089,"2'757'303.4, 1'192'989.0",,1'007,Coordinates in Mikko J's phone
+Arella,A4,A4.4,46.86909,9.501852,"2'757'286.3, 1'192'952.8",,1'009,Coordinates in Mikko J's phone
+Arella,A4,A4.5,46.869164,9.502057,"2'757'301.6, 1'192'961.4",,1'007,Coordinates in Mikko J's phone
+Arella,A4,A4.6,46.869278,9.502387,"2'757'326.5, 1'192'974.8",,1'003,Coordinates in Mikko J's phone
+Arella,A4,A4.7,46.868982,9.502077,"2'757'303.8, 1'192'941.2",,1'004,Coordinates in Mikko J's phone
+Arella,A4,A4.8,46.869091,9.502202,"2'757'313.0, 1'192'953.6",,1'003,Coordinates in Mikko J's phone
+Arella,A4,A4.9,46.869181,9.502446,"2'757'331.3, 1'192'964.2",,1'002,Coordinates in Mikko J's phone
+Arella ,A5,A5.1,46.866325,9.498539,"2'757'041.9, 1'192'638.9",,1'016,Coordinates in Mikko J's phone
+Arella,A5,A5.2,46.866501,9.498519,"2'757'039.8, 1'192'658.3",,1'015,Coordinates in Mikko J's phone
+Arella ,A5,A5.3,46.866663,9.498538,"2'757'040.8, 1'192'676.4",,1'016,Coordinates in Mikko J's phone
+Arella,A5,A5.4,46.866303,9.498739,"2'757'057.2, 1'192'636.5",,1'012,Coordinates in Mikko J's phone
+Arella ,A5,A5.5,46.866488,9.498783,"2'757'060.1, 1'192'657.4",,1'007,"moved 2m towards A5.8 to avoid bushes, coordinates in Mikko J's phone"
+Arella,A5,A5.6,46.866678,9.498772,"2'757'058.7, 1'192'678.5",,1'009,Coordinates in Mikko J's phone
+Arella ,A5,A5.7,46.866329,9.498959,"2'757'073.9, 1'192'640.1",,1'006,Coordinates in Mikko J's phone
+Arella,A5,A5.8,46.866499,9.498984,"2'757'075.3, 1'192'658.9",,1'004,Coordinates in Mikko J's phone
+Arella ,A5,A5.9,46.866668,9.499036,"2'757'078.8, 1'192'678.0",,1'003,Coordinates in Mikko J's phone
+Arella,A6,A6.1,46.864646,9.496406,"2'756'884.3, 1'192'447.9",,998,Coordinates in Viviana's phone
+Arella,A6,A6.2,46.864822,9.496596,"2'756'898.1, 1'192'468.0",,1'006,Coordinates in Viviana's phone
+Arella,A6,A6.3,46.86453,9.49732,"2'756'954.2, 1'192'437.0",,985,Coordinates in Viviana's phone
+Arella,A6,A6.4,46.864615,9.496601,"2'756'899.2, 1'192'445.0",,994,Coordinates in Viviana's phone
+Arella,A6,A6.5,46.864574,9.496888,"2'756'921.1, 1'192'440.7",,991,Coordinates in Viviana's phone
+Arella,A6,A6.6,46.864532,9.497241,"2'756'948.2, 1'192'437.1",,986,Coordinates in Viviana's phone
+Arella,A6,A6.7,46.86434,9.496919,"2'756'924.2, 1'192'415.0",,984,Coordinates in Viviana's phone
+Arella,A6,A6.8,46.864347,9.497024,"2'756'932.2, 1'192'416.0",,983,Coordinates in Viviana's phone
+Arella,A6,A6.9,46.86443,9.497368,"2'756'958.2, 1'192'425.9",,982,Coordinates in Viviana's phone
+Under Alp,U1,U1.1,46.87986,9.49297,"2'756'577.9, 1'194'131.3",,1'715,Coordinates in Viviana's phone; Coordinates adjusted using the map
+Under Alp,U1,U1.2,46.880004,9.49303,"2'756'582.3, 1'194'148.1",,1'717,Coordinates in Viviana's phone
+Under Alp,U1,U1.3,46.880236,9.493144,"2'756'590.1, 1'194'174.0",,1'728,Coordinates in Viviana's phone
+Under Alp,U1,U1.4,46.879785,9.493179,"2'756'594.3, 1'194'123.9",,1'711,Coordinates in Viviana's phone
+Under Alp,U1,U1.5,46.87997,9.49331,"2'756'603.2, 1'194'144.8",,1'712,Coordinates in Viviana's phone; Coordinates adjusted using the map
+Under Alp,U1,U1.6,46.880149,9.493456,"2'756'614.2, 1'194'165.0",,1'721,Coordinates in Viviana's phone
+Under Alp,U1,U1.7,46.87973,9.49334,"2'756'606.7, 1'194'118.4",,1'709,Coordinates in Viviana's phone; Coordinates adjusted using the map
+Under Alp,U1,U1.8,46.879933,9.493487,"2'756'617.2, 1'194'141.0",,1'714,Coordinates in Viviana's phone; Coordinates adjusted using the map
+Under Alp,U1,U1.9,46.88007,9.49372,"2'756'634.2, 1'194'156.7",,1'723,Coordinates in Viviana's phone; Coordinates adjusted using the map
+Under Alp,U2,U2.1,46.879884,9.491189,"2'756'442.1, 1'194'130.9",,1'746,Coordinates in Viviana's phone
+Under Alp,U2,U2.2,46.88022,9.491031,"2'756'429.2, 1'194'168.1",,1'768,Coordinates in Viviana's phone
+Under Alp,U2,U2.3,46.880122,9.49146,"2'756'462.0, 1'194'158.0",,1'753,Coordinates in Viviana's phone
+Under Alp,U2,U2.4,46.879854,9.491358,"2'756'455.1, 1'194'127.9",,1'742,Coordinates in Viviana's phone
+Under Alp,U2,U2.5,46.87986,9.491516,"2'756'467.2, 1'194'129.1",,1'739,Coordinates in Viviana's phone
+Under Alp,U2,U2.6,46.87991,9.491714,"2'756'482.1, 1'194'135.0",,1'736,Coordinates in Viviana's phone
+Under Alp,U2,U2.7,46.879897,9.491451,"2'756'462.0, 1'194'133.1",,1'741,Coordinates in Viviana's phone
+Under Alp,U2,U2.8,46.879912,9.491623,"2'756'475.3, 1'194'134.9",,1'738,Coordinates in Viviana's phone
+Under Alp,U2,U2.9,46.880022,9.491994,"2'756'503.2, 1'194'148.0",,1'735,Coordinates in Viviana's phone

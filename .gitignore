@@ -37,3 +37,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Large data files
+Traits/9136.txt
+Traits/TryAccSpecies.txt
