@@ -20,6 +20,45 @@ try.species <- read.delim("Traits/TryAccSpecies.txt") %>%
 
 Calanda_19_cover <- read.csv('Vegetation/Calanda_19_Vegetation_data_errors_checked_fh_27_4_2020.csv', stringsAsFactors = F)
 
+# What is the abundance of trees and unknowns that could not be assigned any trait value
+Calanda_19_cover %>% 
+  dplyr::select(-(Cow.feces:Survey.done.by)) %>% 
+  gather(Species, cover, Achillea.millefolium:Viola.sp) %>% 
+  filter(Species == "Juniperus.communis"| 
+           Species == "Larix.decidua"| 
+           Species == "Pinus.sp" | 
+           Species == "Dicot.sp" |
+         Species == "Dicot.sp.1.N1.5.2" |
+         Species == "Dicot.sp.2" |
+         Species == "Dicot.sp.2.N1.5.2" |
+         Species == "Dicot.sp.5" |
+         Species == "Dicot.sp.N4.1.1" |
+         Species == "Dicot.sp.U2.3.3"
+           ) %>% 
+  group_by(PlotID) %>% 
+  summarize(cover= sum(cover)) %>% 
+  summary()
+# unknown dicots and trees never accounted for more than 7% cover in a plot
+
+Calanda_19_cover %>% 
+  dplyr::select(-(Cow.feces:Survey.done.by)) %>% 
+  gather(Species, cover, Achillea.millefolium:Viola.sp) %>% 
+  filter(Species == "Juniperus.communis"| 
+           Species == "Larix.decidua"| 
+           Species == "Pinus.sp" | 
+           Species == "Dicot.sp" |
+           Species == "Dicot.sp.1.N1.5.2" |
+           Species == "Dicot.sp.2" |
+           Species == "Dicot.sp.2.N1.5.2" |
+           Species == "Dicot.sp.5" |
+           Species == "Dicot.sp.N4.1.1" |
+           Species == "Dicot.sp.U2.3.3"
+  ) %>% 
+  group_by(PlotID) %>% 
+  summarize(cover= sum(cover)) %>% 
+  filter(cover>0)
+# these taxa occur in 30 plots.
+
 # use the same species names that were used to calculate phylogenetic diversity 
 # with the exception that Hieraceum becomes "pilosella"
 c19_spp_plot <- Calanda_19_cover %>% 
