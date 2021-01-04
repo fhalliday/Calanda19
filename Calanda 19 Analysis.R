@@ -634,7 +634,7 @@ std.effecs.fig <- c19.effect.summary %>%
   ggplot(aes(x = fct_relevel(Type, "Net"), y = Estimate, fill = effect)) + 
   facet_wrap(~Driver, scales = "free",strip.position = "bottom") +
   geom_col(position = position_dodge()) +
-  scale_fill_manual(values = c("red", "black")) +
+  scale_fill_manual(values = c("black", "grey")) +
   # annotate the bars that aren't actually supported by the model
   geom_text(aes(label = n.s), vjust = 1) +
   labs(y = "Standardized estimate", x = "") +
@@ -646,7 +646,7 @@ std.effecs.fig <- c19.effect.summary %>%
     lbl = c("A)", "B)")),
     aes(x = .6, y = 1, label = lbl), vjust = -.5) 
 
-# pdf("Figures/SEM_effects.pdf", height = 5, width = 10)
+# pdf("Figures/SEM_effects_22Dec20.pdf", height = 5, width = 10)
 # std.effecs.fig
 # dev.off()
 
@@ -710,71 +710,93 @@ summary(model.c19_2, .progressBar = T)
 
 
 # Is it possible that individual traits are driving the host pace-of-life response?----
-f1mod <- lme(sqrt.Disease.l ~ f1*elevation,
-             random = ~1|Meadow/Site/PlotID,
-             weights = varIdent(form = ~ 1 | Site),
-             data = calanda19.com,
-             control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
-car::Anova(f1mod)
+MuMIn::AICc(calanda19.dmod)
+# So the model with pace-of-life had AICc 207.99, marginal R2 = .238, conditional R2 = .460, RMSE = 0.295, and LOOCV RMSE = 0.315
 
-# Chlorophyll, Leaf_lifespan, Leaf_N, Leaf_P, SLA
-traitmod <- lme(sqrt.Disease.l ~ Chlo.z*elevation + 
-                  Lon.z*elevation +
-                  N.z*elevation +
-                  P.z*elevation +
-                  SLA.z*elevation,
-                random = ~1|Meadow/Site/PlotID,
-                weights = varIdent(form = ~ 1 | Site),
-                data = calanda19.com,
-                control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
+# I'll start with a base model, to make this a bit simpler.
+base.model <- lme(sqrt.Disease.l ~ plant.richness*elevation + mpd.obs.z*elevation,
+                  random = ~1|Meadow/Site/PlotID,
+                  weights = varIdent(form = ~ 1 | Site),
+                  data = calanda19.com,
+                  control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
+
+# First model replaces f1 with Chlorophyll, Leaf_lifespan, Leaf_N, Leaf_P, SLA
+traitmod <- update(base.model, .~. + Chlo.z*elevation + 
+                     Lon.z*elevation +
+                     N.z*elevation +
+                     P.z*elevation +
+                     SLA.z*elevation)
 car::Anova(traitmod)
-# no significant interactions in a multiple regression model, but that might be due to colinearity?
+MuMIn::AICc(traitmod)
+MuMIn::r.squaredGLMM(traitmod)
 
-Chlomod <- lme(sqrt.Disease.l ~ Chlo.z*elevation,
-                random = ~1|Meadow/Site/PlotID,
-                weights = varIdent(form = ~ 1 | Site),
-                data = calanda19.com,
-                control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
+# LOOCV function
+LOOCV <- function(m) {
+  for (i in 1:nrow(calanda19.com)){
+    train.data  <- calanda19.com[-i, ]
+    test.data <- calanda19.com[i, ]
+    model <- update(m, data = train.data)
+    xval <- rbind(xval, data.frame(obs = test.data$sqrt.Disease.l, pred = predict(model, test.data)))
+    
+  }
+  
+  # calculate the RMSE
+  LOOCV.rmse <- xval %>%
+    mutate(error = obs - pred) %>%
+    summarize(LOOCV.rmse = sqrt(mean(error^2)))
+  
+  # compare that with the RMSE of the full model
+  rmse <- sqrt(mean(m$residuals^2))
+  
+  cbind(rmse = rmse, LOOCV.rmse = LOOCV.rmse)
+}
+
+# commented out becasue this takes a long time to run
+# LOOCV(traitmod)
+
+# AIC 319.42, marginal R2 = .252, conditional R2 = .432, RMSE = 0.293, and LOOCV RMSE = 0.319
+
+# model with Chlorophyll content only
+Chlomod <- update(base.model, .~. + Chlo.z * elevation)
 car::Anova(Chlomod)
-# no interaction
+MuMIn::AICc(Chlomod)
+MuMIn::r.squaredGLMM(Chlomod)
+# LOOCV(Chlomod)
+#AICc 220.28, marginal R2 = .167, conditional R2 = .393, RMSE = 0.296, and LOOCV RMSE = 0.318
 
-Lonmod <- lme(sqrt.Disease.l ~ Lon.z*elevation,
-               random = ~1|Meadow/Site/PlotID,
-               weights = varIdent(form = ~ 1 | Site),
-               data = calanda19.com,
-               control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
+# Model with leaf longevity only
+Lonmod <- update(base.model, .~. + Lon.z * elevation)
 car::Anova(Lonmod)
-# no interaction
+MuMIn::AICc(Lonmod)
+MuMIn::r.squaredGLMM(Lonmod)
+# LOOCV(Lonmod)
+# AICc 217.93, marginal R2 = .183, conditional R2 = .434, RMSE = 0.292, and LOOCV RMSE = 0.315
 
-Nmod <- lme(sqrt.Disease.l ~ N.z*elevation,
-               random = ~1|Meadow/Site/PlotID,
-               weights = varIdent(form = ~ 1 | Site),
-               data = calanda19.com,
-               control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
+# Model with leaf nitrogen only
+Nmod <- update(base.model, .~. + N.z * elevation)
 car::Anova(Nmod)
-# no
+MuMIn::AICc(Nmod)
+MuMIn::r.squaredGLMM(Nmod)
+# LOOCV(Nmod)
+# AICc 221.72, marginal R2 = .166, conditional R2 = .393, RMSE = 0.294, and LOOCV RMSE = 0.317
 
-Pmod <- lme(sqrt.Disease.l ~ P.z*elevation,
-               random = ~1|Meadow/Site/PlotID,
-               weights = varIdent(form = ~ 1 | Site),
-               data = calanda19.com,
-               control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
+# Model with leaf phosphorus only
+Pmod <- update(base.model, .~. + P.z * elevation)
 car::Anova(Pmod)
-# nope
+MuMIn::AICc(Pmod)
+MuMIn::r.squaredGLMM(Pmod)
+# LOOCV(Pmod)
+# AICc 220.09, marginal R2 = .176, conditional R2 = .399, RMSE = 0.298, and LOOCV RMSE = 0.318
 
-SLAmod <- lme(sqrt.Disease.l ~ SLA.z*elevation,
-               random = ~1|Meadow/Site/PlotID,
-               weights = varIdent(form = ~ 1 | Site),
-               data = calanda19.com,
-               control=list(maxIter=1000, msMaxIter = 1000, tolerance = 1e-7))
+# Model with SLA only
+SLAmod <- update(base.model, .~. + SLA.z * elevation)
 car::Anova(SLAmod)
-# Yes
+MuMIn::AICc(SLAmod)
+MuMIn::r.squaredGLMM(SLAmod)
+# LOOCV(SLAmod)
+# AICc 212.41, marginal R2 = .251, conditional R2 = .391, RMSE = 0.298, and LOOCV RMSE = 0.316
 
 # So of the traits associated with pace-of-life, only one, SLA, interacted with elevation to influence community disease load.
-
-# Which is the "better model"?
-AIC(f1mod, SLAmod)
-# the model with pace-of-life has a lower AIC
 
 # this is interesting. But remember the trait-continuum was calculated at the
 # host species level, and leaf chlorophyll content loaded even more strongly
