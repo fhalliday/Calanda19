@@ -479,6 +479,7 @@ model.c19 <- psem(
 # note that warning about NAs refers to data that we won't ever use, so i think it's ok.
 
 model.c19.fit <- summary(model.c19, .progressBar = T)
+model.c19.fit
 
 # visualize the standardized direct, indirect, effects, 
 # I realize that this code is very ugly. That's because I was figuring out what I wanted as I wrote the code.
