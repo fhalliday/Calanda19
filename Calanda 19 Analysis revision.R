@@ -500,18 +500,19 @@ model.c19.high.t.fit
 
 # remake figure 3
 
-f1_modplot_t <- emmeans::emtrends(calanda19.dmod.t, ~mean.soil.surface.t, var = "f1", at = list(mean.soil.surface.t = seq(min(calanda19.com$mean.soil.surface.t), max(calanda19.com$mean.soil.surface.t), .1))) %>% 
+f1_modplot_t <- emmeans::emtrends(calanda19.dmod.t, ~soil_surf_t_centered, var = "f1_scaled", at = list(soil_surf_t_centered = seq(min(calanda19.com$soil_surf_t_centered), max(calanda19.com$soil_surf_t_centered), .1))) %>% 
   data.frame() %>% 
   mutate(in.data = case_when(
-    mean.soil.surface.t < min(calanda19.com$mean.soil.surface.t) ~ "No",
-    mean.soil.surface.t > max(calanda19.com$mean.soil.surface.t) ~ "No",
+    soil_surf_t_centered < min(calanda19.com$soil_surf_t_centered) ~ "No",
+    soil_surf_t_centered > max(calanda19.com$soil_surf_t_centered) ~ "No",
     TRUE ~ "Yes"
-  )) %>% 
-  ggplot(aes(x = mean.soil.surface.t, y = f1.trend)) +
+  ),
+  mean_soil_surf_t = soil_surf_t_centered + mean(calanda19.com$mean.soil.surface.t)) %>% 
+  ggplot(aes(x = mean_soil_surf_t, y = f1_scaled.trend)) +
   geom_ribbon(fill = "grey", aes(ymin = lower.CL, ymax = upper.CL)) +
   geom_line() + 
   geom_hline(yintercept = 0, lty =2, alpha = .6) +
-  geom_rug(data = calanda19.com, aes(y = f1), sides = "b") +
+  geom_rug(data = calanda19.com, aes(x = mean.soil.surface.t, y = f1), sides = "b") +
   labs(y = "Effect of community pace-of-life on disease", x = "Soil-surface Temperature")
 
 # pdf("Figures/F1_moderation_revision.pdf", height = 4, width = 5)
